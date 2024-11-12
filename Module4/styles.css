@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+}
+
+.color-example {
+    color: orangered;
+    border-style: groove;
+    border-width: medium;
+    border-color: rgb(235, 66, 4);
+    background-color: #000000;
+}
+
+.header-example {
+    font-family: Georgia;
+    font-size: 1.4cm;
+    font-weight: 200;
+    color: orangered;
+    text-align: center;
+}
+
+.list-example {
+    list-style-type: square;
+    color: blue;
+    list-style-position: inside;
+    text-align: center;
+    font-size: larger;
+}
+
+.text-example {
+    font-family: serif;
+    font-size: large;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+.div-example {
+    background-color: lightgreen;
+    border-style: inset;
+    border-width: thick;
+    border-color: blue;
+}
+
+:not(.div-example) > h2 {
+    color:orangered;
+    font-size: 1cm;
+    text-transform: capitalize;
+}
+
+:not(.div-example) > h3 {
+    color: orangered;
+    font-size: 0.7cm;
+    text-transform: capitalize
+}
