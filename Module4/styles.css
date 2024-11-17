@@ -114,4 +114,7 @@ h3 {
 
 footer {
     color: white;
+    border-top: solid;
+    border-color: orangered;
+    padding: 0.2cm;
 }
