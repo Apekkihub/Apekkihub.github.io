@@ -1,53 +1,111 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(20, 20, 20)
 }
 
-.color-example {
-    color: orangered;
-    border-style: groove;
-    border-width: medium;
-    border-color: rgb(235, 66, 4);
-    background-color: #000000;
+.progressbar {
+    text-align: center;
 }
 
-.header-example {
+progress {
+    padding-top: 0.5cm;
+    width: 400px;
+    height: 100px;
+}
+
+.indexpara {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+#leffakuva {
+    float: left;
+    height: 190px;
+    width: 125px;
+    padding-right: 15px; 
+}
+
+#top3scifi {
+    display: inline-block;
+    border-style: dotted;
+    padding: 0.2cm;
+}
+.leffatiedot {
+    color: white;   
+}
+
+#brclassphoto {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15%;
+    filter: sepia(30%);
+    padding-top: 0.3cm;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+    font-family: georgia;
+    font-size: 0.8cm;
+    padding: 0.5cm;
+    text-decoration: underline;
+    text-decoration-color:red;
+}
+
+.header {
     font-family: Georgia;
     font-size: 1.4cm;
     font-weight: 200;
     color: orangered;
     text-align: center;
+    border-bottom: solid;
+    border-color: orangered;
 }
 
-.list-example {
-    list-style-type: square;
+.sivulinkki {
     color: blue;
-    list-style-position: inside;
+    display: block;
     text-align: center;
+}
+
+.brarvostelu {
     font-size: larger;
+    color: white;
+    text-align: center;
+    margin-right: 35%;
+    margin-left: 35%;
+    background: url(Images/brlogo.jpg);
+    background-size: cover;
+    border-radius: 1cm;
+    border-style: ridge;
+    border-color: red;  
 }
 
 .text-example {
     font-family: serif;
     font-size: large;
-    text-decoration: underline;
-    text-transform: capitalize;
+    color: white;
 }
 
-.div-example {
-    background-color: lightgreen;
-    border-style: inset;
-    border-width: thick;
-    border-color: blue;
+.aboutus {
+    border-top: inset;
+    border-width: 0.5cm;
+    border-color: orangered;
 }
 
-:not(.div-example) > h2 {
+h2 {
     color:orangered;
     font-size: 1cm;
     text-transform: capitalize;
 }
 
-:not(.div-example) > h3 {
+h3 {
     color: orangered;
     font-size: 0.7cm;
     text-transform: capitalize
+}
+
+footer {
+    color: white;
 }
