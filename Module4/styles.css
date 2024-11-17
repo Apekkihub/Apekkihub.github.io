@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(20, 20, 20)
+}
+
+.progressbar {
+    text-align: center;
+}
+
+progress {
+    padding-top: 0.5cm;
+    width: 400px;
+    height: 100px;
+}
+
+.indexpara {
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+#leffakuva {
+    float: left;
+    height: 190px;
+    width: 125px;
+    padding-right: 15px; 
+}
+
+#top3scifi {
+    display: inline-block;
+    border-style: dotted;
+    padding: 0.2cm;
+}
+.leffatiedot {
+    color: white;   
+}
+
+#brwin {
+    max-width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: sepia(30%);
+    border-radius: 15%;
+    padding-top: 0.3cm;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+    font-family: georgia;
+    font-size: 0.6cm;
+    padding: 0.5cm;
+    text-decoration: underline;
+    text-decoration-color:red;
+}
+
+.header {
+    font-family: Georgia;
+    font-size: 1.4cm;
+    font-weight: 200;
+    color: orangered;
+    text-align: center;
+    border-bottom: solid;
+    border-color: orangered;
+}
+
+.sivulinkki {
+    color: blue;
+    display: block;
+    text-align: center;
+}
+
+.brarvostelu {
+    font-size: larger;
+    color: white;
+    text-align: center;
+    margin-right: 35%;
+    margin-left: 35%;
+    background-color: black;
+    border-radius: 1cm;
+    border-style: ridge;
+    border-color: red;  
+}
+
+.text-example {
+    font-family: serif;
+    font-size: large;
+    color: white;
+}
+
+.aboutus {
+    border-top: inset;
+    border-width: 0.5cm;
+    border-color: orangered;
+}
+
+h2 {
+    color:orangered;
+    font-size: 1cm;
+    text-transform: capitalize;
+}
+
+h3 {
+    color: orangered;
+    font-size: 0.7cm;
+    text-transform: capitalize
+}
+
+footer {
+    color: white;
+}
