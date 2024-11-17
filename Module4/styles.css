@@ -17,7 +17,7 @@ progress {
     margin-bottom: 100px;
 }
 
-#leffakuva {
+.leffakuva {
     float: left;
     height: 190px;
     width: 125px;
@@ -41,6 +41,13 @@ progress {
     filter: sepia(30%);
     border-radius: 15%;
     padding-top: 0.3cm;
+}
+
+#review {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: red;
 }
 
 figcaption {
@@ -73,8 +80,8 @@ figcaption {
     font-size: larger;
     color: white;
     text-align: center;
-    margin-right: 35%;
-    margin-left: 35%;
+    margin-right: 30%;
+    margin-left: 30%;
     background-color: black;
     border-radius: 1cm;
     border-style: ridge;
