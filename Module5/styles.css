@@ -45,11 +45,6 @@
     list-style-type: none;
     padding: 0;
   }
-
- ul > li {
-    display: inline-block;
-    border-style: solid;
-  }
   
   /* Style the content */
   article {
