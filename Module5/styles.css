@@ -16,7 +16,7 @@
     background-color: #FF8F32;
     padding: 30px;
     font-size: 35px;
-    color: #FFC696;
+    color: #FFC696;;
   }
 
   h2 {
@@ -44,6 +44,11 @@
   nav ul {
     list-style-type: none;
     padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 15px;
   }
   
   /* Style the content */
