@@ -1,91 +1,117 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Helvetica, Arial, sans-serif;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    background-color: #121212;
-  }
-  
-  /* Style the header */
-  header {
-    background-color: #FF8F32;
-    padding: 30px;
-    font-size: 35px;
-    color: #FFC696;;
-  }
+  box-sizing: border-box;
+}
 
-  h2 {
-    color: #FFC696;;
-  }
-  
-  /* Container for flexboxes */
-  section {
-    display: -webkit-flex;
-    display: flex;
-  }
-  
-  /* Style the navigation menu */
-  nav {
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    background: #FF7400;
-    padding: 20px;
-    border-top: solid 5px #121212;
-  }
-  
-  /* Style the list inside the menu */
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #121212;
+}
 
-  li {
-    display: inline-block;
-    margin-right: 15px;
-  }
-  
-  /* Style the content */
-  article {
-    -webkit-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    padding: 10px;
-    color: rgb(155, 151, 151);
-    border-right: #FF7400;
-    border-left: #FF7400;
-  }
+/* Style the header */
+header {
+  background-color: #ff8f32;
+  padding: 5px;
+  font-size: 25 px;
+  color: #ffc696;
+}
 
-  /* Battle Roayle student photo */
-  #brstudents {
-    max-width: 30%;
-    position: relative;
-    float: left;
-    border: 5px solid #121212;
-  }
+h2, h3 {
+  color: #FFC696;;
+}
 
-  
-  /* Style the footer */
-  footer {  
-    background-color: #FF7400;
-    padding: 10px;
-    text-align: center;
-    color: #FFC696;
-    text-decoration: underline;
-    border-left: solid 10px #121212;
-    border-right: solid 10px #121212;
-    border-bottom: solid 10px #121212;
+
+/* Create column for left nav bar */
+.navleft {
+  float: left;
+  width: 10%;
+  min-height: 550px;
+  background-color: #ff8f32;
+  padding: 20px;
+}
+
+.leftlist {
+  margin-bottom: 20px;
+}
+
+nav {
+  background: #FF7400;
+  padding: 15px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+
+/* main navigation link styling */
+.mainnav {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.mainnav a:hover {
+  color: red;
+}
+
+article {
+  color: rgb(155, 151, 151);
+}
+
+/* Create a column for the movie poster in the movie page */
+.movieimage {
+  float: left;
+  width: 10%;
+}
+
+.articleright {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #121212;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#brstudents {
+  max-width: 30%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+#coos {
+  max-width: 90%;
+  max-height: 90%;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+
+
+/* Style the footer */
+footer {
+  background-color: #FF7400;
+  padding: 10px;
+  text-align: center;
+  color: #FFC696;
+  text-decoration: underline;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
   }
-  
-  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-  @media (max-width: 600px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
-    }
-  }
+}
