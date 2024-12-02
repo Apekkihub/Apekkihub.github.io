@@ -27,8 +27,9 @@ h2, h3 {
 /* Create column for left nav bar */
 .navleft {
   float: left;
-  width: 10%;
-  min-height: 550px;
+  width: 15%;
+  min-width: 15%;
+  height: 670px;
   background-color: #ff8f32;
   padding: 20px;
 }
@@ -63,16 +64,11 @@ article {
   color: rgb(155, 151, 151);
 }
 
-/* Create a column container for the movie poster in the movie page */
-.movieimage {
-  float: left;
-  width: 10%;
-}
-
 .articleright {
   float: left;
   padding: 20px;
-  width: 80%;
+  width: 85%;
+  height: 600px;
   background-color: #121212;
 }
 
@@ -90,15 +86,6 @@ section::after {
   margin-bottom: 15px;
 }
 
-#coos {
-  max-width: 90%;
-  max-height: 90%;
-  margin-left: 20px;
-  margin-top: 20px;
-  border-radius: 15px;
-}
-
-
 /* Style the footer */
 footer {
   background-color: #FF7400;
@@ -111,7 +98,7 @@ footer {
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article {
+  nav, article, .articleright, .navleft {
     width: 100%;
     height: auto;
   }
