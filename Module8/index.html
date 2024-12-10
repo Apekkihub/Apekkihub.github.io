@@ -9,35 +9,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
   <link rel="manifest" href="images/favicon/site.webmanifest">
-
-  <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
     
 </head>
 
@@ -65,7 +36,9 @@
           There will be no mercy and the game will be played seriously from the start, the weapons vary from pot lids to crossbows and they are distributed at random. 
           The players have three days to complete the game or no one will leave the island alive.
           </p>
+          <hr>
       </article>
+      <h3>Click for more images</h3>
 
       <div class="slideshow-container">
 
@@ -78,8 +51,8 @@
 
       <div class="mySlides fade">
         <div class="numbertext">2 / 3</div>
-        <img src="images/brwinner.webp" style="width:100%">
-        <div class="text">Winner of previous year</div>
+        <img src="images/brimage.jpg" style="width:100%">
+        <div class="text">Chiaki Kuriyama was later seen in Kill Bill</div>
       </div>
 
       <div class="mySlides fade">
@@ -107,6 +80,35 @@
 <footer>
     <p>Apekki 2024</p>
 </footer>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
 
 </body>
 </html>
