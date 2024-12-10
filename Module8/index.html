@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Apekki's Movies</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    
+</head>
+
+<body>
+    <header>
+      <img src="images/logo1.png" class="logo">
+      <h1>Apekki's Movies</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="mainnav"><a href="index.html">Main Page</a></li>
+        <li class="mainnav"><a href="second.html">Top 3 Sci-fi</a></li>
+        <li class="mainnav"><a href="third.html">Color out of Space</a></li>
+        <li class="mainnav"><a href="fourth.html">Contact us</a></li>
+      </ul>
+    </nav>
+
+    <main>
+        <h2>Movie of the Day</h2>
+      <article>
+          <h3>Battle Royale</h3>
+          <p>
+          A Japanese 9th grade is drugged midst their field trip and are placed in a remote island playing a simple game: last one alive will get to go home. 
+          There will be no mercy and the game will be played seriously from the start, the weapons vary from pot lids to crossbows and they are distributed at random. 
+          The players have three days to complete the game or no one will leave the island alive.
+          </p>
+      </article>
+
+      <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/brstudents.jpg" style="width:100%">
+        <div class="text">Students participating</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/brwinner.webp" style="width:100%">
+        <div class="text">Winner of previous year</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/brphoto.jpg" style="width:100%">
+        <div class="text">Movie poster</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    </main>
+    
+
+<footer>
+    <p>Apekki 2024</p>
+</footer>
+
+</body>
+</html>
