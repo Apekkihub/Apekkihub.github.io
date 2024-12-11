@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -27,19 +28,24 @@
     </nav>
   
     <main>
-        <h3>Here you can leave feedback from the page</h3>
+        <h3>Here you can reach us through the contact form or via social media!</h3>
+        <div class="row">
+            <div class="formcontainer">
+                <form action="/action_page.php">
+                    <label for="fname">Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="subject">Feedback</label>
+                    <textarea id="subject" name="subject" placeholder="You can write feedback here..." style="height:200px"></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
 
-        <div class="formcontainer">
-        <form action="/action_page.php">
-            <label for="fname">Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-            <label for="subject">Feedback</label>
-            <textarea id="subject" name="subject" placeholder="You can write feedback here..." style="height:200px"></textarea>
-
-            <input type="submit" value="Submit">
-        </form>
+            <div class="some">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            </div>
         </div>
-
     </main>    
 
 <footer>
