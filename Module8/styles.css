@@ -144,6 +144,11 @@ input[type=submit]:hover {
   width: 50%;
 }
 
+.some {
+  float: left;
+  width: 50%;
+}
+
 .logo {
   position: relative;
   top: -10px;
@@ -292,7 +297,7 @@ footer {
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article, .articleright, .navleft {
+  nav, article, .articleright, .navleft, .formcontainer, .some {
     width: 100%;
     height: auto;
   }
